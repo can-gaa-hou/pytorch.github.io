@@ -1,0 +1,10 @@
+{
+  "name": "ACC5",
+  "support_channel": "https://discord.gg/vendor",
+  "stable": {
+    "linux": "pip3 install torch torchvision --index-url https://download.pytorch.org/whl/acc5/sdk10"
+  },
+  "preview": {
+    "linux": "pip3 install torch torchvision --pre --index-url https://download.pytorch.org/whl/nightly/acc5/sdk10"
+  }
+}

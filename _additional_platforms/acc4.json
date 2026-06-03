@@ -1,0 +1,7 @@
+{
+  "name": "ACC4",
+  "support_channel": "https://discord.gg/vendor4",
+  "stable": {
+    "windows": "pip3 install torch torchvision vendor4-extension"
+  }
+}

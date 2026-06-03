@@ -1,0 +1,12 @@
+{
+  "name": "ACC6",
+  "support_channel": "https://discord.gg/vendor",
+  "stable": {
+    "linux": "pip3 install torch torchvision vendor6-toolkit",
+    "windows": "pip3 install torch torchvision vendor6-toolkit"
+  },
+  "preview": {
+    "linux": "pip3 install torch torchvision vendor6-toolkit --pre",
+    "windows": "pip3 install torch torchvision vendor6-toolkit --pre"
+  }
+}
