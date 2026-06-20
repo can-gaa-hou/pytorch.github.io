@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-20T10:12:13+00:00",
+  "generator_commit": "a28ea70",
+  "platforms": {
+    "acc6": {
+      "name": "ACC6",
+      "support_channel": "https://discord.gg/vendor",
+      "stable": {
+        "linux": "pip3 install torch torchvision vendor6-toolkit",
+        "windows": "pip3 install torch torchvision vendor6-toolkit"
+      },
+      "preview": {
+        "linux": "pip3 install torch torchvision vendor6-toolkit --pre",
+        "windows": "pip3 install torch torchvision vendor6-toolkit --pre"
+      }
+    },
+    "acc4": {
+      "name": "ACC4",
+      "support_channel": "https://discord.gg/vendor4",
+      "stable": {
+        "windows": "pip3 install torch torchvision vendor4-extension"
+      }
+    },
+    "acc5": {
+      "name": "ACC5",
+      "support_channel": "https://discord.gg/vendor",
+      "stable": {
+        "linux": "pip3 install torch torchvision --index-url https://download.pytorch.org/whl/acc5/sdk10"
+      },
+      "preview": {
+        "linux": "pip3 install torch torchvision --pre --index-url https://download.pytorch.org/whl/nightly/acc5/sdk10"
+      }
+    }
+  },
+  "html": {
+    "acc5": "<h1 id=\"installing-on-acc5-platform\">Installing on ACC5 Platform</h1>\n<p>ACC5 is a high-performance accelerator platform provided by Vendor5. This guide will help you install PyTorch with ACC5 support.</p>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<h3 id=\"hardware-requirements\">Hardware Requirements</h3>\n<ul>\n<li>ACC5-compatible accelerator hardware</li>\n<li>Supported operating system (Linux)</li>\n</ul>\n<h3 id=\"software-requirements\">Software Requirements</h3>\n<ul>\n<li>Python 3.9-3.12</li>\n<li>ACC5 SDK or later</li>\n</ul>\n<h2 id=\"installation\">Installation</h2>\n<h3 id=\"pip\">pip</h3>\n<p>Use the pip package manager to install PyTorch with ACC5 support. Select your preferred options in the selector above to get the installation command.</p>\n<h2 id=\"verification\">Verification</h2>\n<p>To ensure that PyTorch was installed correctly with ACC5 support, run the following code:</p>\n<div class=\"highlight\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">torch</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">__version__</span><span class=\"p\">)</span>\n\n<span class=\"c1\"># Check ACC5 availability</span>\n<span class=\"k\">if</span> <span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">backends</span><span class=\"o\">.</span><span class=\"n\">acc5</span><span class=\"o\">.</span><span class=\"n\">is_available</span><span class=\"p\">():</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC5 is available!&quot;</span><span class=\"p\">)</span>\n<span class=\"k\">else</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC5 is not available.&quot;</span><span class=\"p\">)</span>\n</code></pre></div>\n\n<h2 id=\"documentation\">Documentation</h2>\n<p>For more information, please visit the <a href=\"https://docs.vendor5.com/acc5\">ACC5 Documentation</a>.</p>",
+    "acc6": "<h1 id=\"installing-on-acc6-platform\">Installing on ACC6 Platform</h1>\n<p>ACC6 is a high-performance accelerator platform provided by Vendor6. This guide will help you install PyTorch with ACC6 support.</p>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<h3 id=\"hardware-requirements\">Hardware Requirements</h3>\n<ul>\n<li>ACC6-compatible accelerator hardware</li>\n<li>Supported operating system (Linux)</li>\n</ul>\n<h3 id=\"software-requirements\">Software Requirements</h3>\n<ul>\n<li>Python 3.9-3.12</li>\n<li>ACC6 SDK or later</li>\n</ul>\n<h2 id=\"installation\">Installation</h2>\n<h3 id=\"pip\">pip</h3>\n<p>Use the pip package manager to install PyTorch with ACC6 support. Select your preferred options in the selector above to get the installation command.</p>\n<h2 id=\"verification\">Verification</h2>\n<p>To ensure that PyTorch was installed correctly with ACC6 support, run the following code:</p>\n<div class=\"highlight\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">torch</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">__version__</span><span class=\"p\">)</span>\n\n<span class=\"c1\"># Check ACC6 availability</span>\n<span class=\"k\">if</span> <span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">backends</span><span class=\"o\">.</span><span class=\"n\">acc6</span><span class=\"o\">.</span><span class=\"n\">is_available</span><span class=\"p\">():</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC6 is available!&quot;</span><span class=\"p\">)</span>\n<span class=\"k\">else</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC6 is not available.&quot;</span><span class=\"p\">)</span>\n</code></pre></div>\n\n<h2 id=\"documentation\">Documentation</h2>\n<p>For more information, please visit the <a href=\"https://docs.vendor6.com/acc6\">ACC6 Documentation</a>.</p>",
+    "acc4": "<h1 id=\"installing-on-acc4-platform\">Installing on ACC4 Platform</h1>\n<p>ACC4 is a high-performance accelerator platform provided by Vendor4. This guide will help you install PyTorch with ACC4 support.</p>\n<h2 id=\"prerequisites\">Prerequisites</h2>\n<h3 id=\"hardware-requirements\">Hardware Requirements</h3>\n<ul>\n<li>ACC4-compatible accelerator hardware</li>\n<li>Supported operating system (Linux)</li>\n</ul>\n<h3 id=\"software-requirements\">Software Requirements</h3>\n<ul>\n<li>Python 3.9-3.12</li>\n<li>ACC4 SDK or later</li>\n</ul>\n<h2 id=\"installation\">Installation</h2>\n<h3 id=\"pip\">pip</h3>\n<p>Use the pip package manager to install PyTorch with ACC4 support. Select your preferred options in the selector above to get the installation command.</p>\n<h2 id=\"verification\">Verification</h2>\n<p>To ensure that PyTorch was installed correctly with ACC4 support, run the following code:</p>\n<div class=\"highlight\"><pre><span></span><code><span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">torch</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">__version__</span><span class=\"p\">)</span>\n\n<span class=\"c1\"># Check ACC4 availability</span>\n<span class=\"k\">if</span> <span class=\"n\">torch</span><span class=\"o\">.</span><span class=\"n\">backends</span><span class=\"o\">.</span><span class=\"n\">acc4</span><span class=\"o\">.</span><span class=\"n\">is_available</span><span class=\"p\">():</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC4 is available!&quot;</span><span class=\"p\">)</span>\n<span class=\"k\">else</span><span class=\"p\">:</span>\n    <span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s2\">&quot;ACC4 is not available.&quot;</span><span class=\"p\">)</span>\n</code></pre></div>\n\n<h2 id=\"documentation\">Documentation</h2>\n<p>For more information, please visit the <a href=\"https://docs.vendor4.com/acc4\">ACC4 Documentation</a>.</p>"
+  }
+}
